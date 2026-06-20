@@ -1,0 +1,55 @@
+/* White fallback cards for missing images/videos/backgrounds */
+.asset-fallback-host { position: relative !important; overflow: hidden; }
+.asset-placeholder {
+  position: absolute;
+  inset: 16px;
+  z-index: 40;
+  background: rgba(255,255,255,0.96);
+  color: #111111;
+  border: 1px solid rgba(17,17,17,0.14);
+  border-radius: 14px;
+  box-shadow: 0 16px 34px rgba(0,0,0,0.22);
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 16px 18px;
+  text-align: left;
+}
+.asset-placeholder__line {
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-break: break-word;
+}
+.asset-placeholder__label { color: rgba(17,17,17,0.6); }
+.asset-placeholder__value { color: #111111; }
+.asset-placeholder--static {
+  position: relative;
+  inset: auto;
+  min-height: 160px;
+}
+.asset-fallback-hidden { opacity: 0 !important; visibility: hidden !important; }
+@media (max-width: 640px) {
+  .asset-placeholder { inset: 10px; padding: 12px 13px; gap: 7px; }
+  .asset-placeholder__line { font-size: 10px; }
+}
+
+/* Standardized legacy/manual media placeholders */
+.media-card-placeholder,
+.hero-video--placeholder,
+.detail-frame--placeholder {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+.media-card-placeholder__inner {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+.media-card-placeholder__eyebrow,
+.media-card-placeholder__name,
+.media-card-placeholder__specs span {
+  color: #111111 !important;
+  text-transform: lowercase !important;
+}

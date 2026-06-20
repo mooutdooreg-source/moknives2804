@@ -1,0 +1,130 @@
+/* Reusable responsive media wrapper system */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+svg,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+img,
+svg,
+canvas {
+  height: auto;
+}
+
+.media-wrapper,
+.card-media,
+.section-media,
+.piece-media,
+.process-media,
+.evidence-media,
+.drop-media-card,
+.record-page__hero-media,
+.field-media-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.media-wrapper img,
+.card-media img,
+.section-media img,
+.piece-media img,
+.process-media img,
+.evidence-media img,
+.drop-media-card img,
+.record-page__hero-media img,
+.field-media-card img,
+.media-wrapper video,
+.card-media video,
+.section-media video,
+.piece-media video,
+.process-media video,
+.evidence-media video,
+.drop-media-card video,
+.record-page__hero-media video,
+.field-media-card video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    overflow-x: hidden;
+  }
+
+  .header-row {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    column-gap: 12px;
+  }
+
+  .header-row > a[aria-label="Mo Knives Home"] {
+    min-width: 0;
+  }
+
+  .brand-lockup {
+    min-width: 0;
+    max-width: 100%;
+    gap: 8px;
+    padding: 8px 12px 8px 10px;
+  }
+
+  .brand-lockup img {
+    height: 30px;
+  }
+
+  .brand-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+
+  #mobile-menu-button {
+    justify-self: end;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hover-glow,
+  .hover-glow-white {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@supports (overflow: clip) {
+  @media (max-width: 767px) {
+    .site-header {
+      overflow-x: clip;
+    }
+  }
+}

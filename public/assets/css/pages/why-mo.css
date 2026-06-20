@@ -1,0 +1,279 @@
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body.why-mo-body {
+  background-color: #070808;
+  color: #ece5da;
+  overflow-x: hidden;
+}
+
+.why-clean-page {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(230, 124, 18, 0.08), transparent 22%),
+    radial-gradient(circle at 88% 82%, rgba(214, 101, 16, 0.06), transparent 20%),
+    linear-gradient(180deg, #050607 0%, #08090b 38%, #0b0c0e 100%);
+}
+
+.why-clean-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.015), transparent 10%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.008) 0, rgba(255,255,255,0.008) 1px, transparent 1px, transparent 120px);
+  opacity: 0.38;
+}
+
+.why-clean-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5.5rem) 1.5rem clamp(4rem, 8vw, 6rem);
+}
+
+.why-clean-hero {
+  max-width: 52rem;
+}
+
+.why-clean-eyebrow,
+.why-clean-label,
+.why-clean-next-step__label {
+  display: inline-block;
+  margin: 0 0 1rem;
+  color: #f4a319;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.why-clean-title {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.5rem, 5vw, 4.7rem);
+  line-height: 0.98;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #f5efe6;
+  font-weight: 700;
+}
+
+.why-clean-lead {
+  margin: 1.2rem 0 0;
+  max-width: 43rem;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.9;
+  color: rgba(242, 236, 227, 0.78);
+}
+
+.why-clean-section {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.why-clean-copy,
+.why-clean-media {
+  min-width: 0;
+}
+
+.why-clean-section-title,
+.why-clean-next-step__heading {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 3vw, 3.45rem);
+  line-height: 1.04;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f7f0e5;
+  font-weight: 600;
+}
+
+.why-clean-copy p {
+  margin: 1rem 0 0;
+  max-width: 39rem;
+  font-size: 1.03rem;
+  line-height: 1.95;
+  color: rgba(242, 236, 227, 0.8);
+}
+
+.why-clean-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(10,10,10,0.84), rgba(16,16,16,0.96));
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  aspect-ratio: 4 / 3;
+}
+
+.why-clean-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(4,4,4,0.06) 0%, rgba(4,4,4,0.14) 40%, rgba(4,4,4,0.34) 100%);
+  pointer-events: none;
+}
+
+.why-clean-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.05) contrast(1.06) brightness(0.92);
+}
+
+.why-clean-frame--proof img {
+  filter: saturate(1.12) contrast(1.12) brightness(0.78);
+  transform: scale(1.02);
+}
+
+.why-clean-next-step {
+  margin-top: clamp(3.6rem, 6vw, 5.8rem);
+}
+
+.why-clean-next-step__inner {
+  position: relative;
+  overflow: hidden;
+  min-height: 370px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(11,11,11,0.94), rgba(6,6,6,0.98));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
+}
+
+.why-clean-next-step__visual {
+  position: absolute;
+  inset: 0;
+  background: url('../../media/pages/why-mo/cta/why-mo-cta-vault-desktop-v1.avif') center center / cover no-repeat;
+  filter: brightness(0.82) saturate(1.06) contrast(1.05);
+}
+
+.why-clean-next-step__content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  min-height: 370px;
+  padding: clamp(2rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(90deg, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.72) 42%, rgba(5,5,5,0.12) 100%);
+}
+
+.why-clean-next-step__copy {
+  margin: 1rem 0 0;
+  max-width: 32rem;
+  font-size: 1.03rem;
+  line-height: 1.9;
+  color: rgba(242, 236, 227, 0.82);
+}
+
+.why-clean-next-step__btn {
+  margin-top: 1.6rem;
+}
+
+.why-clean-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.95rem 1.4rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #c98b31, #d8a254);
+  color: #111;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  box-shadow: 0 14px 30px rgba(217, 119, 6, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-clean-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 36px rgba(217, 119, 6, 0.24);
+}
+
+.why-clean-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.78s cubic-bezier(0.16, 1, 0.3, 1), transform 0.78s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.why-clean-fade.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1023px) {
+  .why-clean-section {
+    grid-template-columns: 1fr;
+  }
+
+  .why-clean-section--media-first .why-clean-media {
+    order: -1;
+  }
+
+  .why-clean-next-step__content {
+    max-width: 100%;
+    min-height: 340px;
+    background: linear-gradient(180deg, rgba(5,5,5,0.88) 0%, rgba(5,5,5,0.48) 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .why-clean-wrap {
+    padding: 2.8rem 0.9rem 4rem;
+  }
+
+  .why-clean-title {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .why-clean-section-title,
+  .why-clean-next-step__heading {
+    font-size: clamp(1.55rem, 8vw, 2.4rem);
+  }
+
+  .why-clean-lead,
+  .why-clean-copy p,
+  .why-clean-next-step__copy {
+    font-size: 0.96rem;
+    line-height: 1.82;
+  }
+
+  .why-clean-next-step__inner,
+  .why-clean-frame {
+    border-radius: 18px;
+  }
+
+  .why-clean-next-step__content {
+    padding: 1.35rem;
+  }
+
+  .why-clean-cta {
+    width: 100%;
+  }
+}
+
+.why-clean-frame video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.08) contrast(1.08) brightness(0.82);
+}

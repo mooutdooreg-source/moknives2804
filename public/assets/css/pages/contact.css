@@ -1,0 +1,66 @@
+    html {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #e5e5e5;
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+.form-input {
+      background: #171717;
+      border: 1px solid #262626;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      border-color: #d97706;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+    }
+/* Fade Up Animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Cinematic Text Hover Effects */
+    .hover-glow,
+    .hover-glow-white {
+      display: inline-block;
+      width: fit-content;
+      transition: all 0.3s ease;
+      cursor: default;
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.8);
+      padding: 4px 12px;
+      margin: -4px -12px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+
+    .hover-glow:hover {
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(217, 119, 6, 0.9), 0 0 25px rgba(217, 119, 6, 0.6);
+      transform: scale(1.02) translateY(-2px);
+      color: #ffffff;
+      background: rgba(5, 5, 5, 0.7);
+      backdrop-filter: blur(6px);
+      border-color: rgba(217, 119, 6, 0.3);
+    }
+
+    .hover-glow-white:hover {
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);
+      transform: scale(1.02) translateY(-2px);
+      color: #ffffff;
+      background: rgba(5, 5, 5, 0.7);
+      backdrop-filter: blur(6px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  
